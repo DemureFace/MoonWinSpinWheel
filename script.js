@@ -1,5 +1,6 @@
 const popup = document.getElementById("popup");
 const title = document.getElementById("popup-title");
+const body = document.getElementsByTagName("body")[0];
 const main = document.getElementById("main");
 const welcomeOfferSection = document.getElementById("welcomeOfferSection");
 const stepsSection = document.getElementById("stepsSection");
@@ -8,6 +9,7 @@ const popupAnimationClasses = [
   { name: "popup_show", element: popup },
   { name: "main_hide", element: main },
   { name: "title_show", element: title },
+  { name: "body_mobile", element: body },
 ];
 
 if (localStorage.getItem("showPopup")) {

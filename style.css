@@ -20,6 +20,10 @@ body {
   z-index: 0;
 }
 
+.body_mobile {
+  height: 100vh;
+}
+
 body::before {
   position: absolute;
   content: "";
@@ -547,6 +551,12 @@ p {
 
   .steps-section__item:first-of-type {
     padding: 16px 72px 16px 16px;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .body_mobile {
+    height: auto;
   }
 }
 
